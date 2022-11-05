@@ -45,6 +45,7 @@ while True:
 
         elif choice =='4':
             if(num2==0):
+                print("ZeroDivisionError")
                 logger_abnoraml.warning("ZeroDivisionError")
             else:
                 print(num1, "/", num2, "=", divide(num1, num2))

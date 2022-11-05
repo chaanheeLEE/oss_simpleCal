@@ -14,9 +14,12 @@ def multiply(x, y):
 
 #Need to define divide function.
 def divide (x, y):
-    return x / y
+    try:
+        return x / y
+    except ZeroDivisionError:
+        print("ZeroDivisionError")
 
-# this function quest next_calculation
+# this function quests next_calculation
 def quest():
     next_calculation = input("Let's do next calculation? (yes/no): ")
     if next_calculation.lower() == "no":
@@ -26,7 +29,7 @@ def quest():
     else:
         quest()
 
-# This function request next_calculation
+# This function requests next_calculation
 def request():
     re_next_calculation = input("Are you sure? (yes/no): ")
     if re_next_calculation.lower() =="yes":

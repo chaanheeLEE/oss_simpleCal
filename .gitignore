@@ -1,0 +1,6 @@
+#ignore all .log files
+*.log
+
+# etc
+.vscode/
+__pycache__/
